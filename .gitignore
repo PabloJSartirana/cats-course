@@ -44,4 +44,11 @@ build/
 .DS_Store
 
 ### Scala ###
-.bsp/.idea/
+.bsp/
+.idea/
+project/target/
+project/project/
+.metals/
+.bloop/
+.scala-build/
+metals.sbt
