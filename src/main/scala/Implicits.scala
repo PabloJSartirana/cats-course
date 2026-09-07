@@ -18,7 +18,7 @@ object Implicits {
 
   def increment(x: Int)(implicit y: Int) = x + y
 
-  implicit val y = 10
+  implicit val y: Int = 10
 
   val increment1 = increment(5)
 
