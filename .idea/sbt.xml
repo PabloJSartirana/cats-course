@@ -8,8 +8,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="\\wsl.localhost\Ubuntu-22.04\home\pablojsartirana\IdeaProjects\Scala\cats-course" />
-            <option value="\\wsl.localhost\Ubuntu-22.04\home\pablojsartirana\IdeaProjects\Scala\cats-course\project" />
+            <option value="\\wsl.localhost\Ubuntu-22.04\home\pablojsartirana\IdeaProjects\Scala\Training\cats\cats-training" />
+            <option value="\\wsl.localhost\Ubuntu-22.04\home\pablojsartirana\IdeaProjects\Scala\Training\cats\cats-training\project" />
           </set>
         </option>
         <option name="sbtVersion" value="1.12.11" />

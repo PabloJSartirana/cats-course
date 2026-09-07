@@ -1,16 +1,15 @@
-
-name := "cats"
-
-version := "0.2"
-
-scalaVersion := "2.13.7"
-
-val catsVersion = "2.7.0"
+name         := "cats-training"
+version      := "0.1.0"
+scalaVersion := "3.3.6"
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % catsVersion,
+  "org.typelevel"     %% "cats-core" % "2.13.0",
+  "org.playframework" %% "play-json" % "3.0.4"
 )
 
 scalacOptions ++= Seq(
-  "-language:higherKinds"
+  "-deprecation",
+  "-feature",
+  "-unchecked"
 )
+

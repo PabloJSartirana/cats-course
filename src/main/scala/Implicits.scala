@@ -9,20 +9,20 @@ object Implicits {
     def greet: String = Person(name).greet
   }
 
-  val greetPablo = new PersonGreeter("Pablo")
+  private val greetPablo = new PersonGreeter("Pablo")
 
   greetPablo.greet
 
-  val greetings = "Pablo".greet
+  private val greetings = "Pablo".greet
 
 
-  def increment(x: Int)(implicit y: Int) = x + y
+  private def increment(x: Int)(implicit y: Int) = x + y
 
-  implicit val y = 10
+  implicit val y: Int = 10
 
-  val increment1 = increment(5)
+  private val increment1 = increment(5)
 
-  def mulitply(x:Int)(implicit t: Int) = x * t
+  private def multiply(x:Int)(implicit t: Int) = x * t
 
 
   trait JSONSerializer[T] {
@@ -36,18 +36,18 @@ object Implicits {
          |""".stripMargin
   }
 
-  def listToJson[T](list: List[T])(implicit serializer:JSONSerializer[T]):String = {
+  private def listToJson[T](list: List[T])(implicit serializer:JSONSerializer[T]):String = {
     list.map(v => serializer.toJson(v)).mkString("[",",","]")
   }
 
-  val persontoJson = listToJson(List(Person("Gilberto"), Person("Sandra")))
+  private val personToJson = listToJson(List(Person("Gilberto"), Person("Sandra")))
 
   def main(args: Array[String]): Unit = {
     println(greetPablo.greet)
     println(greetings)
     println(increment1)
-    println(mulitply(2))
-    println(persontoJson)
+    println(multiply(2))
+    println(personToJson)
   }
 
 }
