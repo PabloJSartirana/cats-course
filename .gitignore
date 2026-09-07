@@ -45,3 +45,10 @@ build/
 
 ### Scala ###
 .bsp/
+.idea/
+project/target/
+project/project/
+.metals/
+.bloop/
+.scala-build/
+metals.sbt
