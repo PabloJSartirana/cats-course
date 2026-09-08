@@ -1,7 +1,3 @@
-object TypeClasses {
+object TypeClasses extends App{
 
-
-  def main(args: Array[String]): Unit = {
-    
-  }
 }

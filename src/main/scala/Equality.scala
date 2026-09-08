@@ -1,7 +1,4 @@
-object Equality {
 
+object Equality extends App{
 
-  def main(args: Array[String]): Unit = {
-
-  }
 }

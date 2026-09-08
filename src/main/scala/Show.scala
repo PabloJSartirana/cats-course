@@ -1,7 +1,4 @@
-object Show {
+object Show  extends App{
 
 
-  def main(args: Array[String]): Unit = {
-    
-  }
 }
